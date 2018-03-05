@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding_large"
+        android:text="@string/title_examination"
+        android:textSize="@dimen/text_large_size" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="眼   底">
+
+                <TextView
+                    android:id="@+id/textView_yand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_yd"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgYandi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_yand"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbYandi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_normal" />
+
+                    <RadioButton
+                        android:id="@+id/rbYandi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_normal" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/etYandi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgYandi"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行2"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="皮肤">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_pf"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPifu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行3"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="巩     膜">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_gm"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvGongmo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行4"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="淋巴结">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_lbj"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvLinba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_24"
+        android:layout_marginTop="@dimen/padding_large"
+        android:contentDescription="肺"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_lung"
+            android:textSize="@dimen/text_meddium_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="桶状胸">
+
+                <TextView
+                    android:id="@+id/textView_tzx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_barrelChest"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgTongfei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_tzx"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbTongfei1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_no" />
+
+                    <RadioButton
+                        android:id="@+id/rbTongfei2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_yes" />
+                </RadioGroup>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行2"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="呼吸音">
+
+                <TextView
+                    android:id="@+id/textView_hxy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_breathSounds"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgHuxiyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_hxy"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbHuxiyin1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_normal" />
+
+                    <RadioButton
+                        android:id="@+id/rbHuxiyin2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_abnormal" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/editText_breathSounds"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgHuxiyin"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行3"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="罗音">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_rales"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvLuoyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_24"
+        android:layout_marginTop="@dimen/padding_large"
+        android:contentDescription="心脏"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/label_heart"
+            android:textSize="@dimen/text_meddium_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="心率"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textView_heartRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_heartRate"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etXinlv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toLeftOf="@+id/textView_unit"
+                    android:layout_toRightOf="@+id/textView_heartRate"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/textView_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_unit"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="心律">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_rhythm"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvXinlv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行2"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="杂音">
+
+                <TextView
+                    android:id="@+id/textView_zy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_murmur"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgZayin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_zy"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbZayin1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_hasNot" />
+
+                    <RadioButton
+                        android:id="@+id/rbZayin2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_has" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/etZayin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgZayin"
+                    android:layout_weight="1.0"
+                    android:ems="10"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_24"
+        android:layout_marginTop="@dimen/padding_large"
+        android:contentDescription="腹   部"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/label_abdomen"
+            android:textSize="@dimen/text_meddium_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="压痛">
+
+                <TextView
+                    android:id="@+id/textView_yt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_yt"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgYatong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_yt"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbYatong1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_hasNot" />
+
+                    <RadioButton
+                        android:id="@+id/rbYatong2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_has" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/editText_yt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgYatong"
+                    android:layout_weight="1.0"
+                    android:ems="10"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行2"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="包块">
+
+                <TextView
+                    android:id="@+id/textView_bk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_bk"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgBaokuai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_bk"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbBaokuai1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_hasNot" />
+
+                    <RadioButton
+                        android:id="@+id/rbBaokuai2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_has" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/editText_bk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgBaokuai"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行3"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="肝大">
+
+                <TextView
+                    android:id="@+id/textView_gd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_gd"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgGanda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_gd"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbGanda1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_hasNot" />
+
+                    <RadioButton
+                        android:id="@+id/rbGanda2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_has" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/etGanda"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgGanda"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行4"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="脾大">
+
+                <TextView
+                    android:id="@+id/textView_pd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_pd"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgPida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_pd"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbPida1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_hasNot" />
+
+                    <RadioButton
+                        android:id="@+id/rbPida2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_has" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/editText_pd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgPida"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行5"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="移动性浊音">
+
+                <TextView
+                    android:id="@+id/textView_ydxzy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_ydxzy"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgZhuyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_ydxzy"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbZhuyin1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_hasNot" />
+
+                    <RadioButton
+                        android:id="@+id/rbZhuyin2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_has" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/tvZhuyin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgZhuyin"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="下肢水肿">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_xzsz"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvShuizhong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行2"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="足背动脉搏动">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_zbdmbd"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvZubei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行3"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="肛门指诊">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_gmzz"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvGangmen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行4"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="乳   腺">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_milkGlands"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvRuxian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_24"
+        android:layout_marginTop="@dimen/padding_large"
+        android:contentDescription="妇科"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/label_gynecological"
+            android:textSize="@dimen/text_meddium_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="外阴">
+
+                <TextView
+                    android:id="@+id/textView_wy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_vulva"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgWaiyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_wy"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbWaiyin1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_wjyc" />
+
+                    <RadioButton
+                        android:id="@+id/rbWaiyin2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_abnormal" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/editText_vulva"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgWaiyin"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行2"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="阴道">
+
+                <TextView
+                    android:id="@+id/textView_yd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_vagina"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgYindao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_yd"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbYindao1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_wjyc" />
+
+                    <RadioButton
+                        android:id="@+id/rbYindao2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_abnormal" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/etWaiyin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgYindao"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行3"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="宫颈">
+
+                <TextView
+                    android:id="@+id/textView_gj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_cervix"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgGongjing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_gj"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbGongjing1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_wjyc" />
+
+                    <RadioButton
+                        android:id="@+id/rbGongjing2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_abnormal" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/etGongjing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgGongjing"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行4"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="宫体">
+
+                <TextView
+                    android:id="@+id/textView_gt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_palace"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgGongti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_gt"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbGongti1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_wjyc" />
+
+                    <RadioButton
+                        android:id="@+id/rbGongti2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_abnormal" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/etGongti"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgGongti"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行5"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="附件">
+
+                <TextView
+                    android:id="@+id/textView_fj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_attachment"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgFujian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_fj"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbFujian1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_wjyc" />
+
+                    <RadioButton
+                        android:id="@+id/rbFujian2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_abnormal" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/etFujian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/rgFujian"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_3">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="其他">
+
+                <TextView
+                    android:id="@+id/textView_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_other"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etQita"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_toRightOf="@+id/textView_other"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="@dimen/widget_size_btn_large_width"
+        android:layout_height="@dimen/widget_size_btn_large_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/ic_btn_green"
+        android:gravity="center"
+        android:text="@string/label_save"
+        android:textColor="@color/white1"
+        android:textSize="@dimen/text_large_size" />
+
+
+</LinearLayout>

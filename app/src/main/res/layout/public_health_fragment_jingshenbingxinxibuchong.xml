@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding_large"
+        android:text="@string/title_activity_zxjsjbhzgrxxbcb"
+        android:textSize="@dimen/text_large_size" />
+
+    <LinearLayout
+        android:id="@+id/base_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_colon"
+                android:text="@string/label_patientName"
+                android:textSize="@dimen/text_meddium_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_patientName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:textSize="@dimen/text_meddium_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textView_tableNumber"
+                android:drawableRight="@drawable/ic_colon"
+                android:text="@string/label_tableNumber"
+                android:textSize="@dimen/text_meddium_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_tableNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:textSize="@dimen/text_meddium_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="监护人姓名">
+
+                <TextView
+                    android:id="@+id/textView_jhrxm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_jhrxm"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_jhrxm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_jhrxm"
+                    android:inputType="text" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="与患者关系">
+
+                <TextView
+                    android:id="@+id/textView_yhzgx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_yhzgx"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_yhzgx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_yhzgx"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行2"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="监护人住址">
+
+                <TextView
+                    android:id="@+id/textView_jhrzz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_jhrzz"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_jhrzz"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_jhrzz"
+                    android:inputType="text" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="监护人电话">
+
+                <TextView
+                    android:id="@+id/textView_jhrdh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_jhrdh"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_jhrdh"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_jhrdh"
+                    android:inputType="number" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行3"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="辖区村（居）委会联系人">
+
+                <TextView
+                    android:id="@+id/textView_xqcjwhlxrxm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_xqcjwhlxrxm"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_xqcjwhlxrxm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_xqcjwhlxrxm"
+                    android:inputType="text" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="辖区村（居）委会联系人电话">
+
+                <TextView
+                    android:id="@+id/textView_xqcjwhlxrdh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_xqcjwhlxrdh"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_xqcjwhlxrdh"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_xqcjwhlxrdh"
+                    android:inputType="number" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行4"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="知情同意">
+
+                <TextView
+                    android:id="@+id/textView_zqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_zqty"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_zqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行5"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="签字">
+
+                <TextView
+                    android:id="@+id/textView_qz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_qz"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_qz"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_qz"
+                    android:inputType="text" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="签字时间">
+
+                <TextView
+                    android:id="@+id/textView_qzsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_qzsj"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_qzsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行6"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="初次发病时间">
+
+                <TextView
+                    android:id="@+id/textView_ccfbsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_ccfbsj"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_ccfbsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="既往主要症状">
+
+                <TextView
+                    android:id="@+id/textView_jwzyzz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_jwzyzz"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_jwzyzz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_jwzyzz"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="right"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_24"
+        android:layout_marginTop="@dimen/padding_large"
+        android:contentDescription="既往治疗情况"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/label_jwzlqk"
+            android:textSize="@dimen/text_meddium_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="门诊">
+
+                <TextView
+                    android:id="@+id/textView_menz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_menz"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_menz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="首次抗精神病药治疗时间">
+
+                <TextView
+                    android:id="@+id/textView_sckjsbyzlsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_sckjsbyzlsj"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_sckjsbyzlsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行2"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="住院">
+
+                <TextView
+                    android:id="@+id/textView_zhuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_zhuy"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_zzjszgyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:layout_toRightOf="@+id/textView_zhuy"
+                    android:text="@string/label_zzjszgyy"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_zzjszgyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toLeftOf="@+id/textView_ci"
+                    android:layout_toRightOf="@+id/textView_zzjszgyy"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView_ci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:text="@string/label_ci"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_24"
+        android:layout_marginTop="@dimen/padding_large"
+        android:contentDescription="目前诊断情况"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/label_mqzdqk"
+            android:textSize="@dimen/text_meddium_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="诊断">
+
+                <TextView
+                    android:id="@+id/textView_zduan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_zduan"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_zduan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40.0dip"
+                    android:layout_toRightOf="@+id/textView_zduan"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行2"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="确诊医院">
+
+                <TextView
+                    android:id="@+id/textView_qzyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_qzyy"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_qzyy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_qzyy"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行3"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="确诊日期">
+
+                <TextView
+                    android:id="@+id/textView_qzrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_qzrq"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_qzrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行4"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="最近一次治疗效果">
+
+                <TextView
+                    android:id="@+id/textView_zjyczlxg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_zjyczlxg"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_zjyczlxg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_24"
+        android:layout_marginTop="@dimen/padding_large"
+        android:contentDescription="患病对家庭社会的影响"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/label_hbdjtshdyx"
+            android:textSize="@dimen/text_meddium_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical"
+            android:weightSum="3.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="轻度滋事">
+
+                <TextView
+                    android:id="@+id/textView_qdzs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_qdzs"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_qdzs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toLeftOf="@+id/textView__qdzs_ci"
+                    android:layout_toRightOf="@+id/textView_qdzs"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView__qdzs_ci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_ci"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="肇事">
+
+                <TextView
+                    android:id="@+id/textView_zs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_zs"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_zs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="38.0dip"
+                    android:layout_toLeftOf="@+id/textView_zs_ci"
+                    android:layout_toRightOf="@+id/textView_zs"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView_zs_ci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_ci"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="肇祸">
+
+                <TextView
+                    android:id="@+id/textView_zh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_zh"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_zh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toLeftOf="@+id/textView_zh_ci"
+                    android:layout_toRightOf="@+id/textView_zh"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView_zh_ci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_ci"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行2"
+            android:gravity="center_vertical"
+            android:weightSum="3.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="自伤">
+
+                <TextView
+                    android:id="@+id/textView_zis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_zis"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_zis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="33.0dip"
+                    android:layout_toLeftOf="@+id/textView__zis_ci"
+                    android:layout_toRightOf="@+id/textView_zis"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView__zis_ci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_ci"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="自杀未遂">
+
+                <TextView
+                    android:id="@+id/textView_zsws"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_zsws"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_zsws"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toLeftOf="@+id/textView_zsws_ci"
+                    android:layout_toRightOf="@+id/textView_zsws"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView_zsws_ci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_ci"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="无">
+
+                <Switch
+                    android:id="@+id/switch_vulva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:contentDescription="无"
+                    android:text="@string/label_w"
+                    android:textOff="@string/label_hasNot"
+                    android:textOn="@string/label_has" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="关锁情况">
+
+                <TextView
+                    android:id="@+id/textView_gsqk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_gsqk"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_gsqk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="经济状况">
+
+                <TextView
+                    android:id="@+id/textView_jjzk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_jjzk"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_jjzk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行2"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="专科医生的意见">
+
+                <TextView
+                    android:id="@+id/textView_zkysdyj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_zkysdyj"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_zkysdyj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_zkysdyj"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行3"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="填表日期">
+
+                <TextView
+                    android:id="@+id/textView_tbrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_tbrq"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_tbrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="医 生 签 字">
+
+                <TextView
+                    android:id="@+id/textView_ysqz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_ysqz"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_ysqz"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_ysqz"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/text_confrim"
+        android:layout_width="@dimen/widget_size_btn_large_width"
+        android:layout_height="@dimen/widget_size_btn_large_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/ic_btn_green"
+        android:gravity="center"
+        android:text="@string/label_save"
+        android:textColor="@color/white1"
+        android:textSize="@dimen/text_large_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_vertical_margin" />
+</LinearLayout>

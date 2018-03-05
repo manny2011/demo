@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/danganxingming"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        app:sLeftBottomTextSize="20sp"
+        app:sLeftBottomTextString="姓名姓名"
+        app:sLeftTopTextString="档案号:"
+        app:sLeftViewGravity="left_center"
+        app:sUseRipple="false"
+        app:sUseShape="false" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/nianlingxingbie"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        app:sLeftBottomTextString="性别:"
+        app:sLeftTopTextString="年龄:"
+        app:sRightTextString=" "
+        app:sRightTopTextString="岁"
+        app:sUseRipple="false"
+        app:sUseShape="false" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/xianzhuzhi"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        app:sLeftTextString="现住址:"
+        app:sUseRipple="false"
+        app:sUseShape="false" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btnQianyue"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:text="签约"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:sCornersRadius="10dp"
+        app:sSelectorNormalColor="@color/orange1"
+        app:sSelectorPressedColor="@color/orange2"
+        app:sUseSelector="true" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btnJilu"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:text="病历记录"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:sCornersRadius="10dp"
+        app:sSelectorNormalColor="@color/purple1"
+        app:sSelectorPressedColor="@color/purple2"
+        app:sUseSelector="true" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btnChengyuan"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:text="家庭成员"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:sCornersRadius="10dp"
+        app:sSelectorNormalColor="@color/blue2"
+        app:sSelectorPressedColor="@color/blue1"
+        app:sUseSelector="true" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btnXiugai"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:text="修改"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:sCornersRadius="10dp"
+        app:sSelectorNormalColor="@color/green1"
+        app:sSelectorPressedColor="@color/green2"
+        app:sUseSelector="true" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btnShanchu"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="30dp"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:sCornersRadius="10dp"
+        app:sSelectorNormalColor="@color/red3"
+        app:sSelectorPressedColor="@color/red1"
+        app:sUseSelector="true" />
+
+</LinearLayout>

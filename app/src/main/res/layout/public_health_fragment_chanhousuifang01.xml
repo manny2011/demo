@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding_large"
+        android:text="@string/title_activity_chfsjlb"
+        android:textSize="@dimen/text_large_size" />
+
+    <LinearLayout
+        android:id="@+id/base_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_colon"
+                android:text="@string/label_patientName"
+                android:textSize="@dimen/text_meddium_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_patientName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:textSize="@dimen/text_meddium_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/number_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textView_tableNumber"
+                android:drawableRight="@drawable/ic_colon"
+                android:text="@string/label_tableNumber"
+                android:textSize="@dimen/text_meddium_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_tableNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:textSize="@dimen/text_meddium_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="行1"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="随访日期">
+
+                <TextView
+                    android:id="@+id/textView_sfrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_colon"
+                    android:text="@string/label_sfrq"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_sfrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="随访日期"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="体温">
+
+                <TextView
+                    android:id="@+id/textView_tw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_colon"
+                    android:text="@string/label_bodyTemperature"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_tw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toLeftOf="@+id/textView_celsius"
+                    android:layout_toRightOf="@+id/textView_tw"
+                    android:contentDescription="体温"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/textView_celsius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_celsius"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="行2"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="一般健康情况">
+
+                <TextView
+                    android:id="@+id/textView_ybjkqk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_colon"
+                    android:text="@string/label_ybjkqk"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_ybjkqk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_ybjkqk"
+                    android:contentDescription="一般健康情况"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="行3"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="一般心理状况">
+
+                <TextView
+                    android:id="@+id/textView_ybxlqk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_colon"
+                    android:text="@string/label_ybxlzk"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_ybxlqk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_ybxlqk"
+                    android:contentDescription="一般心理状况"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="行4"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="血压">
+
+                <TextView
+                    android:id="@+id/textView_xy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_colon"
+                    android:text="@string/label_xy"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_xyssy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70.0dip"
+                    android:layout_toLeftOf="@+id/textView_gang"
+                    android:layout_toRightOf="@+id/textView_xy"
+                    android:contentDescription="血压:舒张压"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView_gang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_gang"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <EditText
+                    android:id="@+id/editText_xyszy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toLeftOf="@+id/textView_mmhg"
+                    android:contentDescription="血压:收缩压"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView_mmhg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_mmhg"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="行5"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="乳房">
+
+                <Switch
+                    android:id="@+id/switch_rf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:contentDescription="乳房"
+                    android:text="@string/label_rf"
+                    android:textOff="@string/label_wjyc"
+                    android:textOn="@string/label_abnormal" />
+
+                <EditText
+                    android:id="@+id/editText_rfyc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/switch_rf"
+                    android:contentDescription="乳房异常"
+                    android:inputType="text" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="恶露">
+
+                <Switch
+                    android:id="@+id/switch_el"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:contentDescription="恶露"
+                    android:text="@string/label_el"
+                    android:textOff="@string/label_wjyc"
+                    android:textOn="@string/label_abnormal" />
+
+                <EditText
+                    android:id="@+id/editText_elyc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/switch_el"
+                    android:contentDescription="恶露异常"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="行6"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="子宫">
+
+                <Switch
+                    android:id="@+id/switch_zg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:contentDescription="子宫"
+                    android:text="@string/label_zg"
+                    android:textOff="@string/label_wjyc"
+                    android:textOn="@string/label_abnormal" />
+
+                <EditText
+                    android:id="@+id/editText_zgyc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/switch_zg"
+                    android:contentDescription="子宫异常"
+                    android:inputType="text" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="伤口">
+
+                <Switch
+                    android:id="@+id/switch_sk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:contentDescription="伤口"
+                    android:text="@string/label_sk"
+                    android:textOff="@string/label_wjyc"
+                    android:textOn="@string/label_abnormal" />
+
+                <EditText
+                    android:id="@+id/editText_skyc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/switch_sk"
+                    android:contentDescription="伤口异常"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="行7"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="其他">
+
+                <TextView
+                    android:id="@+id/textView_qt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_colon"
+                    android:text="@string/label_national_other"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_qt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_qt"
+                    android:contentDescription="其他"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="行8"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="分类">
+
+                <Switch
+                    android:id="@+id/switch_fl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:contentDescription="分类"
+                    android:text="@string/label_fl"
+                    android:textOff="@string/label_wjyc"
+                    android:textOn="@string/label_abnormal" />
+
+                <EditText
+                    android:id="@+id/editText_flyc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/switch_fl"
+                    android:contentDescription="分类异常"
+                    android:inputType="text" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="指  导">
+
+                <TextView
+                    android:id="@+id/textView_zd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_colon"
+                    android:text="@string/label_zd"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_zd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_zd"
+                    android:contentDescription="指  导"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="right"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_24"
+        android:layout_marginTop="@dimen/padding_large"
+        android:contentDescription="转诊建议"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_zz"
+            android:textSize="@dimen/text_meddium_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:contentDescription="转诊">
+
+                <TextView
+                    android:id="@+id/textView_zz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_zz"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_zz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_zz"
+                    android:contentDescription="转诊"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/r_zz1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/label_hasNot" />
+
+                    <RadioButton
+                        android:id="@+id/r_zz2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="@string/label_has" />
+                </RadioGroup>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行2"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="原因">
+
+                <TextView
+                    android:id="@+id/textView_zzyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_colon"
+                    android:text="@string/label_yuanyin"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_zzyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_zzyy"
+                    android:contentDescription="原因"
+                    android:inputType="text" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="机构及科室">
+
+                <TextView
+                    android:id="@+id/textView_zzjgjks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_colon"
+                    android:text="@string/label_jgjks"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_zzjgjks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_zzjgjks"
+                    android:contentDescription="机构及科室"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/round_cornor_gray_shape"
+        android:padding="@dimen/padding_medium">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:contentDescription="行1"
+            android:gravity="center_vertical"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="下次随访日期">
+
+                <TextView
+                    android:id="@+id/textView_xcsfrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_colon"
+                    android:text="@string/label_xcsfrq"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_xcsfrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="下次随访日期"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/nonghuise" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/padding_medium"
+                android:layout_height="@dimen/size_apd_item_row_height" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_weight="1.0"
+                android:contentDescription="随访医生签名">
+
+                <TextView
+                    android:id="@+id/textView_sfysqm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_colon"
+                    android:text="@string/label_sfysqm"
+                    android:textSize="@dimen/text_meddium_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_sfysqm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/padding_3"
+                    android:layout_toRightOf="@+id/textView_sfysqm"
+                    android:contentDescription="随访医生签名"
+                    android:inputType="text" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/text_confrim"
+        android:layout_width="@dimen/widget_size_btn_large_width"
+        android:layout_height="@dimen/widget_size_btn_large_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="@drawable/ic_btn_green"
+        android:gravity="center"
+        android:text="@string/label_save"
+        android:textColor="@color/white1"
+        android:textSize="@dimen/text_large_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_vertical_margin" />
+</LinearLayout>

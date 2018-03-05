@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/top_navigate"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue1"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@id/a_area_list_search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_search_bar_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_medium"
+        android:paddingLeft="@dimen/padding_medium"
+        android:paddingRight="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_medium">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/a_area_list_search_btn"
+            android:background="@drawable/styel_border_white_edit"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@id/image_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search1" />
+            <!--todo-->
+            <EditText
+                android:id="@+id/a_area_list_search_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_toRightOf="@id/image_search"
+                android:background="@null"
+                android:drawableRight="@drawable/editextdel"
+                android:hint="@string/msg_search_disease_hint" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/a_area_list_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:background="@drawable/widget_search_btn_bg"
+            android:gravity="center"
+            android:text="@string/label_search" />
+    </RelativeLayout>
+</RelativeLayout>

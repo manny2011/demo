@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="12dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/tvNum"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/gray3"
+        android:textSize="14sp" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="30dp"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:id="@+id/tvRiQi"
+        android:text="2018-02-25"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvBiaoMing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="3~6岁儿童健康检查记录"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvZhouJi"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="14sp" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btnDelete"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:sCornersRadius="5dp"
+        app:sSelectorNormalColor="@color/red3"
+        app:sSelectorPressedColor="@color/red4"
+        app:sUseSelector="true" />
+</LinearLayout>

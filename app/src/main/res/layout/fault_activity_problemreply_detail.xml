@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_nav"
+        layout="@layout/widget_activity_nav_replydetail"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/widget_size_nav_height" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/listView_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/activity_bottom"
+            android:divider="#00000000" />
+
+        <include
+            android:id="@+id/activity_bottom"
+            layout="@layout/widget_activity_bottom_replydetail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/widget_size_nav_height"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

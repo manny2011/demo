@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:contentDescription="个人档案功能选项">
+
+    <include
+        android:id="@id/activity_nav"
+        layout="@layout/public_health_widget_activity_nav_ep"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/widget_size_nav_height" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/activity_nav">
+
+        <ExpandableListView
+            android:id="@+id/activity_expandable_list"
+            android:layout_width="@dimen/widget_size_aoa_expandlist_width"
+            android:layout_height="fill_parent"
+            android:background="@color/huise3"
+            android:divider="@color/white"
+            android:dividerHeight="0.5dip"
+            android:drawSelectorOnTop="false"
+            android:scrollbars="none"
+            android:listSelector="@drawable/selector_expand_list"
+            android:indicatorStart="@null"
+            android:groupIndicator="@null"
+            android:verticalSpacing="2.0dip" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="@color/huise3" />
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="展现档案列表" />
+
+            <TextView
+                android:text="没有相关数据!"
+                android:id="@android:id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/huise5"
+                android:visibility="gone"
+                android:textSize="@dimen/text_large_size" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

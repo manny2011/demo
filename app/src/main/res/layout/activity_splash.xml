@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@android:id/text1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_begin_logo" />
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/padding_46"
+        android:layout_marginTop="@dimen/padding_large"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="@string/app_name"
+        android:textColor="@color/huise4"
+        android:textSize="@dimen/text_size_beginTitle"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/padding_46"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="@string/company"
+            android:textColor="@color/huise6"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="@string/copyright"
+            android:textColor="@color/huise6"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

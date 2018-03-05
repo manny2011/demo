@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="groupPosition" type="id"/>
+    <item name="childPosition" type="id"/>
+    <item name="dataType" type="id"/>
+    <!--完美解决,这个文件名可以是任意的,type必须是id,name惟一就行!-->
+</resources>

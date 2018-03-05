@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@id/activity_nav"
+        layout="@layout/system_management_widget_activity_nav_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_nav_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_nav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_large"
+            android:layout_marginTop="@dimen/padding_24"
+            android:layout_marginBottom="@dimen/padding_24"
+            android:background="@drawable/round_cornor_gray_shape"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/widget_size_row_height"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/title_activity_doctor_register" />
+
+                <TextView
+                    android:id="@+id/text_doctor_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:drawableRight="@drawable/ic_next_black"
+                    android:gravity="right|clip_vertical"
+                    android:lines="2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/text_doctor_image"
+                    android:gravity="center|right"
+                    android:orientation="vertical"
+                    android:weightSum="2.0">
+
+                    <TextView
+                        android:id="@+id/text_doctor_register1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_medium"
+                        android:gravity="right|clip_vertical"
+                        android:text="@string/msg_login_please"
+                        android:textSize="@dimen/text_meddium_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_doctor_register2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:drawablePadding="@dimen/padding_medium"
+                        android:gravity="right|clip_vertical"
+                        android:text=""
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:background="@color/huise2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/widget_size_row_height"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:id="@+id/text_instrument_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:drawableRight="@drawable/ic_next_black"
+                    android:gravity="right|clip_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/text_instrument_register"
+                    android:text="@string/label_instrument_register" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:background="@color/huise2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/widget_size_row_height"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/text_data_synchronization"
+                    android:text="@string/label_data_synchronization_upload" />
+
+                <TextView
+                    android:id="@+id/text_data_synchronization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:drawableRight="@drawable/ic_next_black"
+                    android:gravity="center|right"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:text="@string/label_senior"
+                    android:textColor="@color/blue2" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:background="@color/huise2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/widget_size_row_height"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:id="@+id/text_advanced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_advanced" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:drawableRight="@drawable/ic_next_black"
+                    android:gravity="right|clip_vertical" />
+
+                <View
+                    android:id="@+id/line_advanced"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/huise2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/widget_size_row_height"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:id="@+id/text_configUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/text_configUser"
+                    android:text="@string/label_config_user" />
+
+                <TextView
+                    android:id="@+id/text_configUser_Username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:gravity="center|right"
+                    android:paddingLeft="@dimen/padding_large" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/huise2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/widget_size_row_height"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:id="@+id/text_configUSB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_config_usb" />
+
+                <TextView
+                    android:id="@+id/text_configUSB_Typename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:gravity="center|right"
+                    android:paddingLeft="@dimen/padding_large" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/huise2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/widget_size_row_height"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:id="@+id/text_configPIN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_config_pin" />
+
+                <TextView
+                    android:id="@+id/text_configPIN_Code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:gravity="center|right"
+                    android:paddingLeft="@dimen/padding_large" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/huise2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/widget_size_row_height"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large">
+
+                <TextView
+                    android:id="@+id/text_configServer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/text_configServer"
+                    android:text="@string/label_config_server_add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:drawableRight="@drawable/ic_next_black"
+                    android:gravity="center|right"
+                    android:paddingLeft="@dimen/padding_large" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/huise2"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/widget_size_row_height"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/text1"
+                    android:text="测试蓝牙" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:drawableRight="@drawable/ic_next_black"
+                    android:gravity="center|right"
+                    android:paddingLeft="@dimen/padding_large" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

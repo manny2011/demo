@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/widget_nav"
+        layout="@layout/system_management_widget_activity_nav_main"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/widget_nav"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30.0dip"
+        android:layout_marginTop="30.0dip"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="bottom|center"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <LinearLayout
+                android:id="@+id/text_ggwsfw"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/tab_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_50"
+                    android:autoLink="all"
+                    android:drawableLeft="@drawable/ic_helicopter"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:gravity="center|left"
+                    android:text="@string/label_ggwsfw"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/padding_24"
+                android:layout_height="0.0dip" />
+
+            <LinearLayout
+                android:id="@+id/text_jcylgl"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/tab_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_50"
+                    android:drawableLeft="@drawable/ic_hospital"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:gravity="center|left"
+                    android:text="@string/label_jcylgl"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_24"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <LinearLayout
+                android:id="@+id/text_fzzd"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/tab_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_50"
+                    android:drawableLeft="@drawable/ic_medicine_cabinet"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:gravity="center|left"
+                    android:text="@string/label_fzzd"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/padding_24"
+                android:layout_height="0.0dip" />
+
+            <LinearLayout
+                android:id="@+id/text_jkjy"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/tab_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_50"
+                    android:drawableLeft="@drawable/ic_doctor"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:gravity="center|left"
+                    android:text="@string/label_jkjy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_24"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <LinearLayout
+                android:id="@+id/text_shfw"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/tab_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_50"
+                    android:drawableLeft="@drawable/shfw1"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:gravity="center|left"
+                    android:text="@string/label_shfw"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/padding_24"
+                android:layout_height="0.0dip" />
+
+            <LinearLayout
+                android:id="@+id/text_zk"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/tab_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_50"
+                    android:drawableLeft="@drawable/zk"
+                    android:drawablePadding="@dimen/padding_medium"
+                    android:gravity="center|left"
+                    android:text="@string/label_zhikong"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widget_nav"
+        android:background="@drawable/btn_white_selector"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_login_blue"
+        android:drawablePadding="@dimen/padding_medium"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_medium"
+        android:text="UserName"
+        android:textColor="@color/blue3"
+        android:textSize="@dimen/text_large_size" />
+
+    <TextView
+        android:id="@+id/text_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/label_version"
+        android:textColor="@color/gray3"
+        android:textSize="@dimen/text_small_size" />
+</RelativeLayout>

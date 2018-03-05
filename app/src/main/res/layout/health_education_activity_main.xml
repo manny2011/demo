@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <include
+        android:id="@id/widget_nav"
+        layout="@layout/widget_activity_nav_main"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/widget_size_nav_height" />
+
+    <ScrollView
+        android:layout_marginTop="@dimen/padding_large"
+        android:layout_below="@+id/widget_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="750.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_24">
+
+            <LinearLayout
+                android:id="@+id/linearlayout0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3.0">
+
+                <LinearLayout
+                    android:id="@+id/ll_keJian"
+                    android:clickable="true"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/styel_border_green_radiu"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/text_train"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_medium"
+                        android:drawableTop="@drawable/ic_databank"
+                        android:text="@string/title_activity_train"
+                        android:textColor="@color/white0"
+                        android:textSize="@dimen/text_large_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/padding_20"
+                    android:layout_height="@dimen/widget_size_main_cx_hw" />
+
+                <LinearLayout
+                    android:id="@+id/ll_reDian"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/style_border_oval_green_middle"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_jkrd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_medium"
+                        android:drawableTop="@drawable/ic_push"
+                        android:text="@string/title_activity_jkrd"
+                        android:textColor="@color/white0"
+                        android:textSize="@dimen/text_large_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/padding_20"
+                    android:layout_height="@dimen/widget_size_main_cx_hw" />
+
+                <LinearLayout
+                    android:id="@+id/ll_yangSheng"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/styel_border_green_radiu"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_bjys"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_medium"
+                        android:drawableTop="@drawable/ic_health_education1"
+                        android:text="@string/title_activity_bjys"
+                        android:textColor="@color/white0"
+                        android:textSize="@dimen/text_large_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/linearlayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20"
+                android:orientation="horizontal"
+                android:weightSum="3.0">
+
+                <LinearLayout
+                    android:id="@+id/ll_xinDianTu"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/styel_border_green_radiu"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_24">
+
+                    <TextView
+                        android:id="@+id/text_ecg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_small"
+                        android:drawableTop="@drawable/ic_medicine_cabinet"
+                        android:text="@string/title_activity_ecg1"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/text_large_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/padding_20"
+                    android:layout_height="@dimen/widget_size_main_cx_hw" />
+
+                <LinearLayout
+                    android:id="@+id/ll_changShi"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/styel_border_green_radiu"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_24">
+
+                    <TextView
+                        android:id="@+id/text_jkzs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_small"
+                        android:drawableTop="@drawable/ic_blackboard"
+                        android:text="@string/title_actvitiy_jkzs"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/text_large_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/padding_20"
+                    android:layout_height="@dimen/widget_size_main_cx_hw" />
+
+                <LinearLayout
+                    android:id="@+id/ll_yinShi"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/styel_border_green_radiu"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_ysyy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_small"
+                        android:drawableTop="@drawable/ic_tea"
+                        android:gravity="center"
+                        android:text="@string/title_activity_ysyy"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/text_large_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:src="@drawable/ic_logo" />
+</RelativeLayout>

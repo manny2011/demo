@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white2"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_20"
+        android:gravity="center"
+        android:padding="@dimen/padding_10">
+
+        <TextView
+            android:id="@+id/textView_reqcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_colon"
+            android:gravity="center"
+            android:text="再次咨询"
+            android:textSize="@dimen/text_size_list_medium" />
+
+        <EditText
+            android:id="@+id/editText_reqcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_toLeftOf="@id/textView_confirm"
+            android:layout_toRightOf="@id/textView_reqcontent"
+            android:background="@drawable/style_edittext_oval_white"
+            android:gravity="center|left|top"
+            android:hint="@string/label_question"
+            android:inputType="textMultiLine"
+            android:minLines="5" />
+
+        <TextView
+            android:id="@+id/textView_confirm"
+            android:layout_width="@dimen/widget_size_btn_menuitem_width"
+            android:layout_height="@dimen/widget_size_btn_large_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/style_border_oval_green_middle"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/label_submit"
+            android:textColor="@color/white1"
+            android:textSize="@dimen/text_size_list_medium" />
+    </RelativeLayout>
+</LinearLayout>

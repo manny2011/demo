@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_nav"
+        layout="@layout/widget_activity_nav_new"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/widget_size_nav_height" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_30"
+            android:drawableRight="@drawable/ic_colon"
+            android:gravity="left"
+            android:text="@string/label_score"
+            android:textSize="@dimen/text_size_list_medium" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_75"
+            android:gravity="center_vertical"
+            android:numStars="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_30"
+            android:drawableRight="@drawable/ic_colon"
+            android:gravity="left"
+            android:text="@string/label_opinion"
+            android:textSize="@dimen/text_size_list_medium" />
+
+        <EditText
+            android:id="@+id/editText_opinion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_10"
+            android:background="@drawable/style_edittext_oval_white"
+            android:gravity="center|left|top"
+            android:hint="请输入你的意见或是建议"
+            android:inputType="textMultiLine"
+            android:minLines="5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_confirm"
+            android:layout_width="@dimen/widget_size_btn_large_width"
+            android:layout_height="@dimen/widget_size_btn_large_height"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:background="@drawable/style_border_oval_green_middle"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/label_submit"
+            android:textColor="@color/white1"
+            android:textSize="@dimen/text_size_list_medium" />
+    </LinearLayout>
+</LinearLayout>

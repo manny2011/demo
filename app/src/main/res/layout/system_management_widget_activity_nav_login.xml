@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:background="@color/blue1"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/NavigateBackLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/btn_white_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_large">
+
+        <TextView
+            android:id="@id/NavigateBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ret"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:paddingLeft="4.0px"
+            android:textColor="#ffffffff"
+            android:textSize="13.5sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/NavigateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:shadowColor="#ff000000"
+        android:shadowDx="0.0"
+        android:shadowDy="-1.0"
+        android:shadowRadius="0.8"
+        android:text="@string/title_activity_login"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/text_size_head_title" />
+
+    <LinearLayout
+        android:id="@+id/NavigateHomeLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_large">
+
+        <TextView
+            android:id="@+id/NavigateHome"
+            android:padding="@dimen/padding_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_border_oval_blue_gradient_middle"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="13.5sp" />
+    </LinearLayout>
+</RelativeLayout>

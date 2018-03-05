@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_nav"
+        layout="@layout/widget_activity_nav_order"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/widget_size_nav_height" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_20"
+                android:weightSum="3.0">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_image1"
+                        android:layout_width="300.0dip"
+                        android:layout_height="229.0dip"
+                        android:background="@drawable/default_image" />
+
+                    <TextView
+                        android:id="@+id/textView_order1"
+                        android:layout_width="@dimen/widget_size_btn_menuitem_width"
+                        android:layout_height="@dimen/widget_size_btn_menuitem_height"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:background="@drawable/btn_red_selector"
+                        android:gravity="center"
+                        android:text="@string/label_dinggou"
+                        android:textColor="@color/white1"
+                        android:textSize="@dimen/text_size_list_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_image2"
+                        android:layout_width="300.0dip"
+                        android:layout_height="229.0dip"
+                        android:background="@drawable/default_image" />
+
+                    <TextView
+                        android:id="@+id/textView_order2"
+                        android:layout_width="@dimen/widget_size_btn_menuitem_width"
+                        android:layout_height="@dimen/widget_size_btn_menuitem_height"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:background="@drawable/btn_red_selector"
+                        android:gravity="center"
+                        android:text="@string/label_dinggou"
+                        android:textColor="@color/white1"
+                        android:textSize="@dimen/text_size_list_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_image3"
+                        android:layout_width="300.0dip"
+                        android:layout_height="229.0dip"
+                        android:background="@drawable/default_image" />
+
+                    <TextView
+                        android:id="@+id/textView_order3"
+                        android:layout_width="@dimen/widget_size_btn_menuitem_width"
+                        android:layout_height="@dimen/widget_size_btn_menuitem_height"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:background="@drawable/btn_red_selector"
+                        android:gravity="center"
+                        android:text="@string/label_dinggou"
+                        android:textColor="@color/white1"
+                        android:textSize="@dimen/text_size_list_medium" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_20"
+                android:weightSum="3.0">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_image4"
+                        android:layout_width="300.0dip"
+                        android:layout_height="229.0dip"
+                        android:background="@drawable/default_image" />
+
+                    <TextView
+                        android:id="@+id/textView_order4"
+                        android:layout_width="@dimen/widget_size_btn_menuitem_width"
+                        android:layout_height="@dimen/widget_size_btn_menuitem_height"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:background="@drawable/btn_red_selector"
+                        android:gravity="center"
+                        android:text="@string/label_dinggou"
+                        android:textColor="@color/white1"
+                        android:textSize="@dimen/text_size_list_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_image5"
+                        android:layout_width="300.0dip"
+                        android:layout_height="229.0dip"
+                        android:background="@drawable/default_image" />
+
+                    <TextView
+                        android:id="@+id/textView_order5"
+                        android:layout_width="@dimen/widget_size_btn_menuitem_width"
+                        android:layout_height="@dimen/widget_size_btn_menuitem_height"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:background="@drawable/btn_red_selector"
+                        android:gravity="center"
+                        android:text="@string/label_dinggou"
+                        android:textColor="@color/white1"
+                        android:textSize="@dimen/text_size_list_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_image6"
+                        android:layout_width="300.0dip"
+                        android:layout_height="229.0dip"
+                        android:background="@drawable/default_image" />
+
+                    <TextView
+                        android:id="@+id/textView_order6"
+                        android:layout_width="@dimen/widget_size_btn_menuitem_width"
+                        android:layout_height="@dimen/widget_size_btn_menuitem_height"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:background="@drawable/btn_red_selector"
+                        android:gravity="center"
+                        android:text="@string/label_dinggou"
+                        android:textColor="@color/white1"
+                        android:textSize="@dimen/text_size_list_medium" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_20"
+                android:weightSum="3.0">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_image7"
+                        android:layout_width="300.0dip"
+                        android:layout_height="229.0dip"
+                        android:background="@drawable/default_image" />
+
+                    <TextView
+                        android:id="@+id/textView_order7"
+                        android:layout_width="@dimen/widget_size_btn_menuitem_width"
+                        android:layout_height="@dimen/widget_size_btn_menuitem_height"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:background="@drawable/btn_red_selector"
+                        android:gravity="center"
+                        android:text="@string/label_dinggou"
+                        android:textColor="@color/white1"
+                        android:textSize="@dimen/text_size_list_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_image8"
+                        android:layout_width="300.0dip"
+                        android:layout_height="229.0dip"
+                        android:background="@drawable/default_image" />
+
+                    <TextView
+                        android:id="@+id/textView_order8"
+                        android:layout_width="@dimen/widget_size_btn_menuitem_width"
+                        android:layout_height="@dimen/widget_size_btn_menuitem_height"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:background="@drawable/btn_red_selector"
+                        android:gravity="center"
+                        android:text="@string/label_dinggou"
+                        android:textColor="@color/white1"
+                        android:textSize="@dimen/text_size_list_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_image9"
+                        android:layout_width="300.0dip"
+                        android:layout_height="229.0dip"
+                        android:background="@drawable/default_image" />
+
+                    <TextView
+                        android:id="@+id/textView_order9"
+                        android:layout_width="@dimen/widget_size_btn_menuitem_width"
+                        android:layout_height="@dimen/widget_size_btn_menuitem_height"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:background="@drawable/btn_red_selector"
+                        android:gravity="center"
+                        android:text="@string/label_dinggou"
+                        android:textColor="@color/white1"
+                        android:textSize="@dimen/text_size_list_medium" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

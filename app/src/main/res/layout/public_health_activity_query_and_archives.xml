@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:contentDescription="查询建档XML">
+
+    <include
+        android:id="@id/activity_nav"
+        layout="@layout/widget_activity_nav"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/widget_size_nav_height"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_nav"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/padding_24"
+        android:layout_marginTop="@dimen/padding_24"
+        android:text="@string/msg_prompt_search"
+        android:textColor="@color/huise5"
+        android:textSize="@dimen/text_large_size" />
+
+    <ScrollView
+        android:id="@+id/table3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_bottom_menu"
+        android:layout_below="@android:id/text1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/table2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@id/table"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:background="@drawable/round_cornor_gray_shape"
+                android:padding="@dimen/padding_medium">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="行1"
+                    android:gravity="center_vertical"
+                    android:weightSum="2.0">
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:contentDescription="身份证"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2.0">
+
+                        <TextView
+                            android:id="@+id/text_idno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawableRight="@drawable/ic_colon"
+                            android:text="@string/label_pepole_code"
+                            android:textSize="@dimen/text_meddium_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_idno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_large"
+                            android:layout_toRightOf="@id/text_idno"
+                            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:inputType="phone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/padding_medium"
+                        android:layout_height="@dimen/size_apd_item_row_height" />
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:contentDescription="出生年月"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2.0">
+
+                        <TextView
+                            android:id="@+id/text_jkdah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawableRight="@drawable/ic_colon"
+                            android:text="@string/label_jkdah"
+                            android:textSize="@dimen/text_meddium_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_jkdah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_large"
+                            android:layout_toRightOf="@id/text_jkdah"
+                            android:inputType="number"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="行2"
+                    android:gravity="center_vertical"
+                    android:weightSum="2.0">
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:contentDescription="姓名"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2.0">
+
+                        <TextView
+                            android:id="@+id/text_mx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawableRight="@drawable/ic_colon"
+                            android:text="@string/label_peopleName"
+                            android:textSize="@dimen/text_meddium_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_xm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_46"
+                            android:layout_toRightOf="@id/text_mx"
+                            android:inputType="text" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/padding_medium"
+                        android:layout_height="@dimen/size_apd_item_row_height" />
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:contentDescription="性别"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2.0">
+
+                        <TextView
+                            android:id="@id/text_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawableRight="@drawable/ic_colon"
+                            android:text="@string/label_sex"
+                            android:textSize="@dimen/text_meddium_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@id/text_select_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="@dimen/padding_3"
+                            android:drawableRight="@drawable/ic_arrow_down_black"
+                            android:gravity="center"
+                            android:text="@string/msg_select_please"
+                            android:textColor="@color/nonghuise" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="行3"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:contentDescription="住址"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@id/text_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawableRight="@drawable/ic_colon"
+                            android:text="@string/label_address"
+                            android:textSize="@dimen/text_meddium_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@id/editText_address"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_46"
+                            android:layout_toRightOf="@id/text_address"
+                            android:inputType="text" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="行4"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:contentDescription="年龄">
+
+                        <TextView
+                            android:id="@+id/text_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawableRight="@drawable/ic_colon"
+                            android:text="@string/label_age"
+                            android:textSize="@dimen/text_meddium_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_46"
+                            android:layout_marginRight="@dimen/padding_large"
+                            android:layout_toLeftOf="@id/text_age1"
+                            android:layout_toRightOf="@id/text_age"
+                            android:drawablePadding="@dimen/padding_3"
+                            android:inputType="number"
+                            android:maxLength="3" />
+
+                        <TextView
+                            android:id="@+id/text_age1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/label_to"
+                            android:textSize="@dimen/text_meddium_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_age1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_large"
+                            android:layout_marginRight="@dimen/padding_large"
+                            android:layout_toLeftOf="@id/text_age2"
+                            android:layout_toRightOf="@id/text_age1"
+                            android:drawablePadding="@dimen/padding_3"
+                            android:inputType="number"
+                            android:maxLength="3" />
+
+                        <TextView
+                            android:id="@+id/text_age2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_32"
+                            android:text="@string/label_yearAge"
+                            android:textSize="@dimen/text_meddium_size"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="行5"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_small"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:layout_weight="1.0"
+                        android:contentDescription="建档时间">
+
+                        <TextView
+                            android:id="@+id/text_jdsj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawableRight="@drawable/ic_colon"
+                            android:text="@string/label_jdsj"
+                            android:textSize="@dimen/text_meddium_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_select_jdsj1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_large"
+                            android:layout_marginRight="@dimen/padding_large"
+                            android:layout_toLeftOf="@id/text_jdsj_to"
+                            android:layout_toRightOf="@id/text_jdsj"
+                            android:drawablePadding="@dimen/padding_3"
+                            android:drawableRight="@drawable/ic_arrow_down_black"
+                            android:gravity="center|right"
+                            android:text="@string/msg_select_please"
+                            android:textColor="@color/nonghuise" />
+
+                        <TextView
+                            android:id="@+id/text_jdsj_to"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/label_to"
+                            android:textSize="@dimen/text_meddium_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_select_jdsj2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_large"
+                            android:layout_marginRight="@dimen/padding_32"
+                            android:layout_toRightOf="@id/text_jdsj_to"
+                            android:drawablePadding="@dimen/padding_3"
+                            android:drawableRight="@drawable/ic_arrow_down_black"
+                            android:gravity="center|right"
+                            android:text="@string/msg_select_please"
+                            android:textColor="@color/nonghuise" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="@dimen/padding_large" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="80.0dip"
+                            android:layout_height="1.0dip" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/checkboxNull"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/label_null" />
+
+                            <RadioButton
+                                android:id="@+id/checkBox07child"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_0_7_child" />
+
+                            <RadioButton
+                                android:id="@+id/checkBox1549woman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_15_49_woman" />
+
+                            <RadioButton
+                                android:id="@+id/checkBox65oldman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_65_old_man" />
+                        </RadioGroup>
+
+                        <View
+                            android:layout_width="@dimen/padding_large"
+                            android:layout_height="1.0dip" />
+
+                        <View
+                            android:layout_width="@dimen/padding_large"
+                            android:layout_height="1.0dip" />
+
+                        <View
+                            android:layout_width="@dimen/padding_large"
+                            android:layout_height="1.0dip" />
+
+                        <View
+                            android:layout_width="@dimen/padding_large"
+                            android:layout_height="1.0dip" />
+                    </LinearLayout>
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="80.0dip"
+                        android:layout_height="1.0dip" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxPregnantWoman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_pregnant_woman" />
+
+                    <View
+                        android:layout_width="@dimen/padding_large"
+                        android:layout_height="1.0dip" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxHypertension"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_hypertension" />
+
+                    <View
+                        android:layout_width="@dimen/padding_large"
+                        android:layout_height="1.0dip" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxDiabetes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_diabetes1" />
+
+                    <View
+                        android:layout_width="@dimen/padding_large"
+                        android:layout_height="1.0dip" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxHolergasia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_psychiatry" />
+                </LinearLayout>
+            </TableLayout>
+
+            <TextView
+                android:id="@id/text_confrim"
+                android:layout_width="@dimen/widget_size_btn_large_width"
+                android:layout_height="@dimen/widget_size_btn_large_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_48"
+                android:background="@drawable/style_border_oval_green_middle"
+                android:gravity="center"
+                android:text="@string/label_search"
+                android:textColor="@color/white1"
+                android:textSize="@dimen/text_large_size" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/activity_bottom_menu"
+        layout="@layout/public_health_widget_aqaa_bottom"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

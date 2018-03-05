@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/activity_header"
+        layout="@layout/system_management_widget_activity_nav_login"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nav_height" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_header"
+        android:layout_marginBottom="@dimen/area_vspace1"
+        android:layout_marginTop="@dimen/padding_large"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_large">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_small">
+
+            <TextView
+                android:id="@+id/al_qq_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_qq_logo"
+                android:onClick="onQQLogin"
+                android:text="@string/label_qq_login"
+                android:textColor="@color/nonghuise"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornor_gray_shape"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/area_item_h"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium">
+
+                <TextView
+                    android:id="@+id/tv_server"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_server"
+                    android:textSize="@dimen/text_small1_size" />
+
+                <View
+                    android:layout_width="@dimen/area_item_hspace"
+                    android:layout_height="1.0dip" />
+
+                <TextView
+                    android:id="@+id/tv_selectserver"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:drawableRight="@drawable/ic_arrow_down_black"
+                    android:gravity="center_vertical"
+                    android:text="@string/msg_select_please"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/text_small1_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/gray2" />
+
+            <LinearLayout
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/area_item_h"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium">
+
+                <TextView
+                    android:id="@+id/activity_login_account_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_login_account"
+                    android:textSize="@dimen/text_small1_size" />
+
+                <View
+                    android:layout_width="@dimen/area_item_hspace"
+                    android:layout_height="1.0dip" />
+
+                <EditText
+                    android:id="@+id/activity_login_account_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:hint="@string/msg_hint_account_input"
+                    android:textSize="@dimen/text_small1_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/gray2" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/area_item_h"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/area_item_h"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/activity_login_forgetpwd"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_login_pwd"
+                        android:textSize="@dimen/text_small1_size" />
+
+                    <View
+                        android:layout_width="@dimen/area_item_hspace"
+                        android:layout_height="1.0dip" />
+
+                    <EditText
+                        android:id="@+id/activity_login_pwd_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:hint="请输入登录密码"
+                        android:inputType="textPassword"
+                        android:textSize="@dimen/text_small1_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/activity_login_forgetpwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_forget_pwd"
+                    android:textColor="@color/blue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="@dimen/area_vspace1" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_size_h">
+
+            <ImageView
+                android:id="@+id/activity_submit"
+                android:layout_width="@dimen/widget_size_btn_large_width"
+                android:layout_height="@dimen/widget_size_btn_large_height"
+                android:layout_centerInParent="true"
+                android:background="@drawable/style_border_oval_green_middle"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/label_login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_meddium_size1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

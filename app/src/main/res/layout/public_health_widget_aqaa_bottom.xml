@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:contentDescription="activity_query_and_archives.xml的bottom layout">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green3"
+        android:weightSum="4.0">
+
+        <TextView
+            android:id="@+id/text_new"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_white_selector"
+            android:drawablePadding="@dimen/padding_3"
+            android:drawableTop="@drawable/ic_new_small"
+            android:paddingBottom="@dimen/padding_medium"
+            android:paddingTop="@dimen/padding_medium"
+            android:gravity="center"
+            android:text="@string/label_new"
+            android:textColor="@color/white1"
+            android:textSize="@dimen/text_meddium_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:src="@drawable/ic_divide" />
+
+        <TextView
+            android:id="@+id/text_list"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_white_selector"
+            android:drawablePadding="@dimen/padding_3"
+            android:drawableTop="@drawable/ic_list"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_medium"
+            android:paddingTop="@dimen/padding_medium"
+            android:text="@string/label_list"
+            android:textColor="@color/white1"
+            android:textSize="@dimen/text_meddium_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:src="@drawable/ic_divide" />
+
+        <TextView
+            android:id="@+id/text_usb"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_white_selector"
+            android:drawablePadding="@dimen/padding_3"
+            android:drawableTop="@drawable/ic_usb"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_medium"
+            android:paddingTop="@dimen/padding_medium"
+            android:text="@string/label_usb_card"
+            android:textColor="@color/white1"
+            android:textSize="@dimen/text_meddium_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:src="@drawable/ic_divide" />
+
+        <TextView
+            android:id="@+id/text_search"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_white_selector"
+            android:drawablePadding="@dimen/padding_3"
+            android:drawableTop="@drawable/ic_card"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_medium"
+            android:paddingTop="@dimen/padding_medium"
+            android:text="@string/label_read_card"
+            android:textColor="@color/white1"
+            android:textSize="@dimen/text_meddium_size" />
+    </LinearLayout>
+</RelativeLayout>

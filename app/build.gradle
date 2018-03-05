@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.administrator.biaozhunban"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+greendao{
+    schemaVersion 1000
+    daoPackage 'com.example.administrator.biaozhunban.greendao'
+    targetGenDir 'src/main/java'
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.zhy:base-adapter:3.0.3'
+    compile 'com.blankj:utilcode:1.10.0'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+    compile 'com.github.bumptech.glide:okhttp3-integration:4.5.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.2.9'
+    implementation 'com.android.support:design:27.0.2'
+    implementation 'com.android.support:cardview-v7:27.0.2'
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    compile 'org.greenrobot:greendao:3.2.2'
+    // add library
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    compile 'com.github.flavienlaurent.datetimepicker:library:0.0.2'
+    compile 'com.github.lygttpod:SuperTextView:2.1.6'
+    implementation files('libs/HsBlueApi.jar')
+}
