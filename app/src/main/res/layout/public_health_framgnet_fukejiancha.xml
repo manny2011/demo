@@ -50,7 +50,7 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
-                    android:id="@+id/rg_fkjcwy"
+                    android:id="@+id/rgWaiyinStatus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -59,7 +59,7 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/r_fkjcwy1"
+                        android:id="@+id/rbWaiyin1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
@@ -67,7 +67,7 @@
                         android:text="@string/label_wjyc" />
 
                     <RadioButton
-                        android:id="@+id/r_fkjcwy2"
+                        android:id="@+id/rbWaiyin2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:tag="2"
@@ -75,11 +75,11 @@
                 </RadioGroup>
 
                 <EditText
-                    android:id="@+id/editText_fkjcwyyc"
+                    android:id="@+id/etWaiyin"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_large"
-                    android:layout_toRightOf="@+id/rg_fkjcwy"
+                    android:layout_toRightOf="@+id/rgWaiyinStatus"
                     android:inputType="text" />
             </RelativeLayout>
 
@@ -103,7 +103,7 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
-                    android:id="@+id/rg_fkjcyd"
+                    android:id="@+id/rgYindaoStatus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -112,7 +112,7 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/r_fkjcyd1"
+                        android:id="@+id/rbYindao1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
@@ -120,7 +120,7 @@
                         android:text="@string/label_wjyc" />
 
                     <RadioButton
-                        android:id="@+id/r_fkjcyd2"
+                        android:id="@+id/rbYindao2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:tag="2"
@@ -128,11 +128,11 @@
                 </RadioGroup>
 
                 <EditText
-                    android:id="@+id/editText_fkjcydyc"
+                    android:id="@+id/etYindao"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_large"
-                    android:layout_toRightOf="@+id/rg_fkjcyd"
+                    android:layout_toRightOf="@+id/rgYindaoStatus"
                     android:inputType="text" />
             </RelativeLayout>
         </TableRow>
@@ -162,7 +162,7 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
-                    android:id="@+id/rg_fkjcgj"
+                    android:id="@+id/rgGongjingStatus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -171,7 +171,7 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/r_fkjcgj1"
+                        android:id="@+id/rbGongjing1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
@@ -179,7 +179,7 @@
                         android:text="@string/label_wjyc" />
 
                     <RadioButton
-                        android:id="@+id/r_fkjcgj2"
+                        android:id="@+id/rbGongjing2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:tag="2"
@@ -187,11 +187,11 @@
                 </RadioGroup>
 
                 <EditText
-                    android:id="@+id/editText_fkjcgjyc"
+                    android:id="@+id/etGongjing"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_large"
-                    android:layout_toRightOf="@+id/rg_fkjcgj"
+                    android:layout_toRightOf="@+id/rgGongjingStatus"
                     android:inputType="text" />
             </RelativeLayout>
 
@@ -215,7 +215,7 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
-                    android:id="@+id/rg_fkjczg"
+                    android:id="@+id/rgZigongStatus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -223,7 +223,7 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/r_fkjczg1"
+                        android:id="@+id/rbZigong1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
@@ -231,7 +231,7 @@
                         android:text="@string/label_wjyc" />
 
                     <RadioButton
-                        android:id="@+id/r_fkjczg2"
+                        android:id="@+id/rbZigong2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:tag="2"
@@ -239,11 +239,11 @@
                 </RadioGroup>
 
                 <EditText
-                    android:id="@+id/editText_fkjczgyc"
+                    android:id="@+id/etZiGong"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_large"
-                    android:layout_toRightOf="@+id/rg_fkjczg"
+                    android:layout_toRightOf="@+id/rgZigongStatus"
                     android:inputType="text" />
             </RelativeLayout>
         </TableRow>
@@ -272,7 +272,7 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
-                    android:id="@+id/rg_fkjcfj"
+                    android:id="@+id/rgFujianStatus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -280,7 +280,7 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/r_fkjcfj1"
+                        android:id="@+id/rbFujian1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
@@ -288,7 +288,7 @@
                         android:text="@string/label_wjyc" />
 
                     <RadioButton
-                        android:id="@+id/r_fkjcfj2"
+                        android:id="@+id/rbFujian2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:tag="2"
@@ -296,29 +296,26 @@
                 </RadioGroup>
 
                 <EditText
-                    android:id="@+id/editText_fkjcfjyc"
+                    android:id="@+id/etFujian"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_large"
-                    android:layout_toRightOf="@+id/rg_fkjcfj"
+                    android:layout_toRightOf="@+id/rgFujianStatus"
                     android:inputType="text" />
             </RelativeLayout>
         </TableRow>
     </TableLayout>
 
     <TextView
-        android:id="@+id/text_confrim"
+        android:id="@+id/tvConfirm"
         android:layout_width="@dimen/widget_size_btn_large_width"
         android:layout_height="@dimen/widget_size_btn_large_height"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/padding_large"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/ic_btn_green"
         android:gravity="center"
         android:text="@string/label_save"
         android:textColor="@color/white1"
         android:textSize="@dimen/text_large_size" />
-
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/activity_vertical_margin" />
 </LinearLayout>

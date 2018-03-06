@@ -40,7 +40,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView_patientName"
+                android:id="@+id/tvName"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/padding_medium"
@@ -65,7 +65,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView_tableNumber"
+                android:id="@+id/tvBianhao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -110,7 +110,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_jhrxm"
+                    android:id="@+id/etJianhuRenMing"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_3"
@@ -139,7 +139,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_yhzgx"
+                    android:id="@+id/etGuanxi"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_3"
@@ -173,7 +173,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_jhrzz"
+                    android:id="@+id/etZhuzhi"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_3"
@@ -202,7 +202,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_jhrdh"
+                    android:id="@+id/etDianhua"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_3"
@@ -235,7 +235,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_xqcjwhlxrxm"
+                    android:id="@+id/etJuweihuiMing"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_3"
@@ -264,7 +264,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_xqcjwhlxrdh"
+                    android:id="@+id/etJuweihuiDianhua"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_3"
@@ -297,7 +297,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_zqty"
+                    android:id="@+id/tvZhiqing"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -335,7 +335,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_qz"
+                    android:id="@+id/etQianzi"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_3"
@@ -364,7 +364,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_qzsj"
+                    android:id="@+id/tvQianziShijian"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -402,7 +402,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_ccfbsj"
+                    android:id="@+id/tvChuciFabingShijian"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -435,7 +435,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_jwzyzz"
+                    android:id="@+id/tvZhuyaoZhengzhuang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -505,7 +505,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_menz"
+                    android:id="@+id/tvNeiZhen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -538,7 +538,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_sckjsbyzlsj"
+                    android:id="@+id/tvShouciZhiliaoShijian"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -586,7 +586,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_zzjszgyy"
+                    android:id="@+id/etCengzhuYiyuan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_3"
@@ -662,7 +662,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_zduan"
+                    android:id="@+id/etZhenDuan"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40.0dip"
@@ -695,7 +695,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_qzyy"
+                    android:id="@+id/etQuezhenYiyuan"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding_3"
@@ -728,7 +728,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_qzrq"
+                    android:id="@+id/tvQuezhenRiqi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -765,7 +765,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_zjyczlxg"
+                    android:id="@+id/tvZhilaoXiaoguo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -834,7 +834,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_qdzs"
+                    android:id="@+id/etZishi1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -844,7 +844,6 @@
                     android:inputType="number" />
 
                 <TextView
-                    android:id="@+id/textView__qdzs_ci"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -875,7 +874,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_zs"
+                    android:id="@+id/etZishi2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -885,7 +884,6 @@
                     android:inputType="number" />
 
                 <TextView
-                    android:id="@+id/textView_zs_ci"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -907,7 +905,6 @@
                 android:contentDescription="肇祸">
 
                 <TextView
-                    android:id="@+id/textView_zh"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -915,18 +912,8 @@
                     android:textSize="@dimen/text_meddium_size"
                     android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/editText_zh"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/padding_3"
-                    android:layout_toLeftOf="@+id/textView_zh_ci"
-                    android:layout_toRightOf="@+id/textView_zh"
-                    android:inputType="number" />
-
                 <TextView
-                    android:id="@+id/textView_zh_ci"
+                    android:id="@+id/tvZishi4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -962,7 +949,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_zis"
+                    android:id="@+id/etZishi4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -972,7 +959,6 @@
                     android:inputType="number" />
 
                 <TextView
-                    android:id="@+id/textView__zis_ci"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -980,6 +966,16 @@
                     android:text="@string/label_ci"
                     android:textSize="@dimen/text_meddium_size"
                     android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etZishi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginStart="308dp"
+                    android:layout_toEndOf="@+id/textView__zis_ci"
+                    android:inputType="number" />
             </RelativeLayout>
 
             <View
@@ -1003,7 +999,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_zsws"
+                    android:id="@+id/etZishi5"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -1035,7 +1031,7 @@
                 android:contentDescription="无">
 
                 <Switch
-                    android:id="@+id/switch_vulva"
+                    android:id="@+id/switcherYingxiang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -1075,7 +1071,6 @@
                 android:contentDescription="关锁情况">
 
                 <TextView
-                    android:id="@+id/textView_gsqk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -1084,7 +1079,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_gsqk"
+                    android:id="@+id/tvGuansuoQingkuang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -1117,7 +1112,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_jjzk"
+                    android:id="@+id/tvJingjiQingkuang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -1154,7 +1149,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_zkysdyj"
+                    android:id="@+id/etYishengYijian"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -1189,7 +1184,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_tbrq"
+                    android:id="@+id/tvTianbiaoRiqi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -1222,7 +1217,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_ysqz"
+                    android:id="@+id/etYisheng"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -1234,10 +1229,11 @@
     </TableLayout>
 
     <TextView
-        android:id="@+id/text_confrim"
+        android:id="@+id/tvConfirm"
         android:layout_width="@dimen/widget_size_btn_large_width"
         android:layout_height="@dimen/widget_size_btn_large_height"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
         android:layout_marginTop="@dimen/padding_large"
         android:background="@drawable/ic_btn_green"
         android:gravity="center"
@@ -1245,7 +1241,4 @@
         android:textColor="@color/white1"
         android:textSize="@dimen/text_large_size" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/activity_vertical_margin" />
 </LinearLayout>

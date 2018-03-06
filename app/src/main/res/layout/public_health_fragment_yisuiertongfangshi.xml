@@ -40,7 +40,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView_patientName"
+                android:id="@+id/tvName"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/padding_medium"
@@ -65,7 +65,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView_tableNumber"
+                android:id="@+id/tvBianhao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -109,7 +109,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_yl"
+                    android:id="@+id/tvYueling"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -143,7 +143,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_sfrq"
+                    android:id="@+id/tvSuifangRiqi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -182,7 +182,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_tz"
+                    android:id="@+id/etTizhong"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -202,7 +202,7 @@
                 android:contentDescription="体重（kg）上 中 下">
 
                 <TextView
-                    android:id="@+id/text_tzszx"
+                    android:id="@+id/tvTizhongFayu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -240,7 +240,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_sc"
+                    android:id="@+id/etShenChang"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -260,7 +260,7 @@
                 android:contentDescription="身长:上 中 下">
 
                 <TextView
-                    android:id="@+id/text_scszx"
+                    android:id="@+id/tvTichangFayu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -298,7 +298,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_tw"
+                    android:id="@+id/etTouwei"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -361,7 +361,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_tgjcms"
+                    android:id="@+id/tvMianse"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -386,7 +386,7 @@
                 android:contentDescription="皮肤">
 
                 <Switch
-                    android:id="@+id/switch_tgjcpf"
+                    android:id="@+id/switchPifu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -420,7 +420,7 @@
                     android:contentDescription="前囟">
 
                     <Switch
-                        android:id="@+id/switch_tgjcql"
+                        android:id="@+id/switchQianlu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
@@ -443,7 +443,7 @@
                     android:contentDescription="前囟1">
 
                     <EditText
-                        android:id="@+id/editText_tgjcql1"
+                        android:id="@+id/etQianluKuan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
@@ -478,7 +478,7 @@
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/editText_tgjcql2"
+                        android:id="@+id/etQianluGao"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/padding_3"
@@ -514,7 +514,7 @@
                 android:contentDescription="颈部包块">
 
                 <Switch
-                    android:id="@+id/switch_tgjcjbbk"
+                    android:id="@+id/switchJingbu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -538,7 +538,7 @@
                 android:contentDescription="眼外观">
 
                 <Switch
-                    android:id="@+id/switch_tgjcywg"
+                    android:id="@+id/switchYanWaiguan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -567,7 +567,7 @@
                 android:contentDescription="耳外观">
 
                 <Switch
-                    android:id="@+id/switch_tgjcewg"
+                    android:id="@+id/switchErWaiguan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -591,7 +591,7 @@
                 android:contentDescription="听力">
 
                 <Switch
-                    android:id="@+id/switch_tgjctl"
+                    android:id="@+id/switchTingli"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -629,7 +629,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_tgjckq"
+                    android:id="@+id/tvKouqiang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -654,7 +654,7 @@
                 android:contentDescription="心肺">
 
                 <Switch
-                    android:id="@+id/switch_tgjcxf"
+                    android:id="@+id/switchXinfei"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -683,7 +683,7 @@
                 android:contentDescription="腹部">
 
                 <Switch
-                    android:id="@+id/switch_tgjcfb"
+                    android:id="@+id/switchFubu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -716,7 +716,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_tgjcqb"
+                    android:id="@+id/tvQibu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -746,7 +746,7 @@
                 android:contentDescription="四肢">
 
                 <Switch
-                    android:id="@+id/switch_tgjcsz"
+                    android:id="@+id/switchSizhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -779,7 +779,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_tgjckyglbzz"
+                    android:id="@+id/tvGoulouZhengzhuang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -818,7 +818,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_tgjckyglbtz"
+                    android:id="@+id/tvGoulouTizheng"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -844,7 +844,7 @@
                 android:contentDescription="肛门/外生殖">
 
                 <Switch
-                    android:id="@+id/switch_tgjcgmwszq"
+                    android:id="@+id/switchShengzhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -883,7 +883,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_tgjcxhdbz"
+                    android:id="@+id/etXuehongdanbai"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="44.0dip"
@@ -942,7 +942,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_hwhd"
+                    android:id="@+id/etHuwai"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16.0dip"
@@ -984,7 +984,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_fywssd"
+                    android:id="@+id/etWeishengsu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="65.0dip"
@@ -1020,7 +1020,7 @@
                 android:contentDescription="发育评估">
 
                 <Switch
-                    android:id="@+id/switch_fypg"
+                    android:id="@+id/switchFayu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -1043,7 +1043,7 @@
                 android:contentDescription="两次随访间患病情况">
 
                 <Switch
-                    android:id="@+id/switch_lcsfjhbqk"
+                    android:id="@+id/switchQiJianHuanBing"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -1082,7 +1082,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_qt"
+                    android:id="@+id/etQita"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -1145,7 +1145,7 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
-                    android:id="@+id/rg_zzjy"
+                    android:id="@+id/rgZhuanzhen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -1154,7 +1154,7 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/r_zzjy1"
+                        android:id="@+id/rbZhuanzhen1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
@@ -1162,7 +1162,7 @@
                         android:text="@string/label_hasNot" />
 
                     <RadioButton
-                        android:id="@+id/r_zzjy2"
+                        android:id="@+id/rbZhuanzhen2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:tag="2"
@@ -1198,7 +1198,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_zzjyyy"
+                    android:id="@+id/etZhuanzhenYuanyin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -1231,7 +1231,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_zzjyjgjks"
+                    android:id="@+id/etJigouKeshi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -1278,7 +1278,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_zd"
+                    android:id="@+id/tvZhidao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -1317,7 +1317,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_xcsfrq"
+                    android:id="@+id/tvXiaciRiqi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -1353,7 +1353,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_sfysqm"
+                    android:id="@+id/etYisheng"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -1366,10 +1366,11 @@
     </TableLayout>
 
     <TextView
-        android:id="@+id/text_confrim"
+        android:id="@+id/tvConfirm"
         android:layout_width="@dimen/widget_size_btn_large_width"
         android:layout_height="@dimen/widget_size_btn_large_height"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
         android:layout_marginTop="@dimen/padding_large"
         android:background="@drawable/ic_btn_green"
         android:gravity="center"
@@ -1377,7 +1378,5 @@
         android:textColor="@color/white1"
         android:textSize="@dimen/text_large_size" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/activity_vertical_margin" />
+
 </LinearLayout>

@@ -40,7 +40,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView_patientName"
+                android:id="@+id/tvName"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/padding_medium"
@@ -65,7 +65,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView_tableNumber"
+                android:id="@+id/tvBianhao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -112,7 +112,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_sfrq"
+                    android:id="@+id/tvRiQi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -145,7 +145,6 @@
                     android:id="@+id/textView_ybjkqk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/editText_ybjkqk"
                     android:layout_centerVertical="true"
                     android:drawableRight="@drawable/ic_colon"
                     android:text="@string/label_ybjkqk"
@@ -153,7 +152,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_ybjkqk"
+                    android:id="@+id/etYibanJiankang"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -183,7 +182,6 @@
                     android:id="@+id/textView_ybxlqk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/editText_ybxlqk"
                     android:layout_centerVertical="true"
                     android:drawableRight="@drawable/ic_colon"
                     android:text="@string/label_ybxlzk"
@@ -191,7 +189,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_ybxlqk"
+                    android:id="@+id/etYibanXinli"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -230,7 +228,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_xyssy"
+                    android:id="@+id/etXueyaLeft1"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="70.0dip"
@@ -262,7 +260,7 @@
                 android:contentDescription="血压:舒张压">
 
                 <EditText
-                    android:id="@+id/editText_xyszy"
+                    android:id="@+id/etXueyaRight"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -304,7 +302,6 @@
                     android:id="@+id/switch_rf"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/editText_rfyc"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/padding_3"
                     android:contentDescription="乳房"
@@ -313,7 +310,7 @@
                     android:textOn="@string/label_abnormal" />
 
                 <EditText
-                    android:id="@+id/editText_rfyc"
+                    android:id="@+id/etRufang"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -334,10 +331,9 @@
                 android:contentDescription="恶露">
 
                 <Switch
-                    android:id="@+id/switch_el"
+                    android:id="@+id/switchELou"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/editText_elyc"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/padding_3"
                     android:contentDescription="恶露"
@@ -346,12 +342,11 @@
                     android:textOn="@string/label_abnormal" />
 
                 <EditText
-                    android:id="@+id/editText_elyc"
+                    android:id="@+id/etELou"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginLeft="@dimen/padding_3"
-                    android:layout_toRightOf="@+id/switch_el"
                     android:contentDescription="恶露异常"
                     android:inputType="text" />
             </RelativeLayout>
@@ -374,10 +369,9 @@
                 android:contentDescription="子宫">
 
                 <Switch
-                    android:id="@+id/switch_zg"
+                    android:id="@+id/switchZiGong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/editText_zgyc"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/padding_3"
                     android:contentDescription="子宫"
@@ -386,12 +380,11 @@
                     android:textOn="@string/label_abnormal" />
 
                 <EditText
-                    android:id="@+id/editText_zgyc"
+                    android:id="@+id/etZiGong"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginLeft="@dimen/padding_3"
-                    android:layout_toRightOf="@+id/switch_zg"
                     android:contentDescription="子宫异常"
                     android:inputType="text" />
             </RelativeLayout>
@@ -407,10 +400,9 @@
                 android:contentDescription="伤口">
 
                 <Switch
-                    android:id="@+id/switch_sk"
+                    android:id="@+id/switchShangkou"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/editText_skyc"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/padding_3"
                     android:contentDescription="伤口"
@@ -419,12 +411,12 @@
                     android:textOn="@string/label_abnormal" />
 
                 <EditText
-                    android:id="@+id/editText_skyc"
+                    android:id="@+id/etShangkou"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginLeft="@dimen/padding_3"
-                    android:layout_toRightOf="@+id/switch_sk"
+                    android:layout_toRightOf="@+id/switchShangkou"
                     android:contentDescription="伤口异常"
                     android:inputType="text" />
             </RelativeLayout>
@@ -449,7 +441,6 @@
                     android:id="@+id/textView_qt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/editText_qt"
                     android:layout_centerVertical="true"
                     android:drawableRight="@drawable/ic_colon"
                     android:text="@string/label_national_other"
@@ -457,7 +448,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_qt"
+                    android:id="@+id/etQita"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -485,7 +476,7 @@
                 android:contentDescription="分类">
 
                 <Switch
-                    android:id="@+id/switch_fl"
+                    android:id="@+id/switchFenlei"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/editText_flyc"
@@ -497,7 +488,7 @@
                     android:textOn="@string/label_whf" />
 
                 <EditText
-                    android:id="@+id/editText_flyc"
+                    android:id="@+id/etFenlei"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -528,7 +519,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_zd"
+                    android:id="@+id/tvZhidao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -559,7 +550,7 @@
                 android:contentDescription="处理">
 
                 <Switch
-                    android:id="@+id/switch_cl"
+                    android:id="@+id/switchChuli"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -591,7 +582,6 @@
                     android:id="@+id/textView_clyy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/editText_clyy"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:drawableRight="@drawable/ic_colon"
@@ -600,7 +590,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_clyy"
+                    android:id="@+id/etYuanyin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -624,7 +614,6 @@
                     android:id="@+id/textView_cljgjks"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/editText_cljgjks"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:drawableRight="@drawable/ic_colon"
@@ -633,7 +622,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_cljgjks"
+                    android:id="@+id/etJigouKeshi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -672,7 +661,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_sfysqm"
+                    android:id="@+id/etYisheng"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -685,10 +674,11 @@
     </TableLayout>
 
     <TextView
-        android:id="@+id/text_confrim"
+        android:id="@+id/tvConfirm"
         android:layout_width="@dimen/widget_size_btn_large_width"
         android:layout_height="@dimen/widget_size_btn_large_height"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
         android:layout_marginTop="@dimen/padding_large"
         android:background="@drawable/ic_btn_green"
         android:gravity="center"
@@ -696,7 +686,4 @@
         android:textColor="@color/white1"
         android:textSize="@dimen/text_large_size" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/activity_vertical_margin" />
 </LinearLayout>

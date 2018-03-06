@@ -40,7 +40,7 @@
                 android:contentDescription="总体评估">
 
                 <Switch
-                    android:id="@+id/switch_ztpg"
+                    android:id="@+id/switchPinggu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -52,12 +52,12 @@
                     android:textOn="@string/label_abnormal" />
 
                 <EditText
-                    android:id="@+id/editText_ztpg"
+                    android:id="@+id/etPinggu"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/padding_large"
-                    android:layout_toRightOf="@+id/switch_ztpg"
+                    android:layout_toRightOf="@+id/switchPinggu"
                     android:inputType="text" />
             </RelativeLayout>
         </TableRow>
@@ -87,7 +87,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_bjzd"
+                    android:id="@+id/tvZhidao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -125,7 +125,7 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
-                    android:id="@+id/rg_zhuanz"
+                    android:id="@+id/rgZhuanzhen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -134,7 +134,7 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/r_zhuanz1"
+                        android:id="@+id/rbZhuanzhen1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
@@ -142,7 +142,7 @@
                         android:text="@string/label_hasNot" />
 
                     <RadioButton
-                        android:id="@+id/r_zhuanz2"
+                        android:id="@+id/rbZhuanzhen2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:tag="2"
@@ -173,7 +173,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_yuanyin"
+                    android:id="@+id/etZhuanzhenYuanyin"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -205,7 +205,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_jgjks"
+                    android:id="@+id/etJigouKeshi"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -241,7 +241,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/text_xcsfrq"
+                    android:id="@+id/tvXiaciRiqi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -276,7 +276,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText_sfysqm"
+                    android:id="@+id/etYisheng"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -288,7 +288,7 @@
     </TableLayout>
 
     <TextView
-        android:id="@+id/text_confrim"
+        android:id="@+id/tvConfirm"
         android:layout_width="@dimen/widget_size_btn_large_width"
         android:layout_height="@dimen/widget_size_btn_large_height"
         android:layout_gravity="center_horizontal"
